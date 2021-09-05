@@ -9,6 +9,7 @@ from rich.console import Console
 console = Console()
 
 def main():
+    #response = requests.get("http://www.google.com")
     response = requests.get("http://www.google.com")
     # response = requests.get("http://www.google.com/random-address/")
     console.print("Status Code: ", response.status_code, style="cyan2")
