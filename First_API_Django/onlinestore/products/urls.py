@@ -6,5 +6,5 @@ from .views import ProductListView, ProductDetailView
 urlpatterns = [
     path("", ProductListView.as_view(), name="product-list"),
     # Pass product primary key to the view, pk is primary key
-    path("products/<int:pk>/", ProductDetailView.as_view(), name="product-detail")
+    path("products/<int:pk>", ProductDetailView.as_view(), name="product-detail")
 ]
