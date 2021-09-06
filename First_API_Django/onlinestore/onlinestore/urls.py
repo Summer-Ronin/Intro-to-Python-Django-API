@@ -22,7 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     # Include product urls.py here
-    path("", include("products.urls"))
+    path("api/", include("products.urls"))
 ]
 
 if settings.DEBUG:

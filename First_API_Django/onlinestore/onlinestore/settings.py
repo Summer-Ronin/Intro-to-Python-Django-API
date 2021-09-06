@@ -122,7 +122,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 MEDIA_ROOT = "uploads"
-MEDIA_URI = "/media/"
+MEDIA_URL = "/media/"
 
 
 # Default primary key field type
