@@ -1,6 +1,6 @@
 from django.urls import path
 # from .views import ProductListView, ProductDetailView
-from .views import product_list, product_detail
+from .views import manufacturer_list, product_list, product_detail, manufacturer_detail, manufacturer_list_active
 
 # Don't uppercase the urlpatterns
 # urlpatterns = [
@@ -11,5 +11,10 @@ from .views import product_list, product_detail
 
 urlpatterns = [
     path("products/", product_list, name="product-list"),
-    path("products/<int:pk>", product_detail, name="product-detail")
+    path("products/<int:pk>", product_detail, name="product-detail"),
+
+    path("manufacturers/", manufacturer_list, name="manufacturer-list"),
+    path("manufacturers/<int:pk>", manufacturer_detail, name="manufacturer-detail"),
+
+    path("manufacturers_active/", manufacturer_list_active, name="manufacturer-list-active")
 ]
